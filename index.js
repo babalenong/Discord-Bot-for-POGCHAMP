@@ -10,7 +10,7 @@ client.on('message', message => {
 	if(message.author.bot) return;
 	const lowercase = message.content.toLowerCase();
 	if(lowercase.includes('pogchamp')) {
-		message.channel.send('POGCHAMP', { files: ['./pogchamp1.png'] });
+		message.channel.send('POGCHAMP', { files: ['https://raw.githubusercontent.com/babalenong/Discord-Bot-for-POGCHAMP/main/pogchamp1.png'] });
 	}
 });
 
