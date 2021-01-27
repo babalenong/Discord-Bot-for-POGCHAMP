@@ -4,12 +4,16 @@
   "description": "send pogchamp when someone says pogchamp",
   "main": "index.js",
   "engines": {
-    "node": "8.x",
-    "npm": "*"
+    "node": "14.15.4",
+    "npm": "6.14.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babalenong/Discord-Bot-for-POGCHAMP.git"
   },
   "author": "Jota",
   "license": "ISC",
