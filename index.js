@@ -1,8 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { token } = require('./config.json');
+const token = process.argv[2];
+// for local testing
+// const { token } = require('./config.json');
 
 client.once('ready', () =>{
+	client.user.setActivity('for pogchamps', { type: 'WATCHING' });
 	console.log('Ready!');
 });
 
