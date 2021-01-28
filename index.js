@@ -31,7 +31,7 @@ client.on('message', message => {
 		message.channel.send('WeirdChamp', { files: ['https://user-images.githubusercontent.com/13828964/106120035-74536100-6188-11eb-8f97-63029c571fba.png'] });
 	}
 	else if (lowercase.match(/\badios\b/g)) {
-		message.channel.send('Adios...', { files: ['https://media.tenor.co/videos/2b9443866424feea184db117fe54bacc/mp4'] });
+		message.channel.send('Adios...', { files: ['https://user-images.githubusercontent.com/13828964/106126237-b6cc6c00-618f-11eb-8b9e-a34ae7463335.gif'] });
 	}
 });
 
