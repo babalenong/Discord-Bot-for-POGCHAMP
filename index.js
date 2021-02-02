@@ -5,7 +5,7 @@ const token = process.env.TOKEN;
 // const { token } = require('./config.json');
 
 client.once('ready', () =>{
-	client.user.setActivity('for pogchamps', { type: 'WATCHING' });
+	client.user.setActivity('for pogchamps | poghelp', { type: 'WATCHING' });
 	console.log('Ready!');
 });
 
@@ -32,6 +32,9 @@ client.on('message', message => {
 	}
 	else if (lowercase.match(/\badios\b/g)) {
 		message.channel.send('Adios...', { files: ['https://user-images.githubusercontent.com/13828964/106126237-b6cc6c00-618f-11eb-8b9e-a34ae7463335.gif'] });
+	}
+	else if (lowercase.match('poghelp')) {
+		message.channel.send('`Commands: pog, pogchamp, pogu, notpog, weirdchamp, adios`');
 	}
 });
 
