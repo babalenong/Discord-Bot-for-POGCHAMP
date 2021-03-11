@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+// for deploy
 const token = process.env.TOKEN;
+
 // for local testing
 // const { token } = require('./config.json');
 
@@ -15,7 +17,10 @@ client.on('message', message => {
 	const lowercase = message.content.toLowerCase();
 	// Word checks starts here
 
-	if (lowercase.match('notpog') || lowercase.match('reverse pog') || lowercase.match('not pog')) {
+	if (lowercase.match('pogkowi')) {
+		message.channel.send('', { files: ['https://user-images.githubusercontent.com/13828964/110792044-7f300400-82a5-11eb-860a-a603227c725e.png'] });
+	}
+	else if (lowercase.match('notpog') || lowercase.match('reverse pog') || lowercase.match('not pog') || lowercase.match('sadpog') || lowercase.match('sad pog')) {
 		message.channel.send('that ain\'t pog', { files: ['https://user-images.githubusercontent.com/13828964/106119989-68679f00-6188-11eb-8b48-8d190ca00a98.png'] });
 	}
 	else if(lowercase.match('pogchamp')) {
